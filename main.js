@@ -1,4 +1,4 @@
-const API = "https://node-js-on-azure-azure-dice-roller1-czfhb6evcgecgpez.canadacentral-01.azurewebsites.net/";
+const API = "https://node-js-on-azure-azure-dice-roller1-czfhb6evcgecgpez.canadacentral-01.azurewebsites.net";
 
 document.getElementById("pingBtn").onclick = async () => {
     const res = await fetch(API + "/api/ping");
@@ -22,3 +22,4 @@ document.getElementById("noCorsBtn").onclick = async () => {
 function show(data) {
     document.getElementById("output").textContent = JSON.stringify(data, null, 2);
 }
+
